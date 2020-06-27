@@ -3,6 +3,7 @@ project(${TARGET})
 
 add_executable(${TARGET}
         TestSlipNG.cpp
+        TestCRC32.cpp
         )
 
 target_link_libraries(${TARGET}

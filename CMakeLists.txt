@@ -57,13 +57,14 @@ else ()
 endif ()
 
 add_library(${TARGET} STATIC
-        src/slip_ng.h
         src/slip_ng.c
+        src/crc32.c
 )
 
 target_link_libraries(${TARGET}
         pthread
         rt
+        minizip
         )
 
 target_include_directories(${TARGET} PUBLIC

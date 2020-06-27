@@ -62,6 +62,8 @@ add_library(${TARGET} STATIC
 )
 
 target_link_libraries(${TARGET}
+        pthread
+        rt
         )
 
 target_include_directories(${TARGET} PUBLIC
